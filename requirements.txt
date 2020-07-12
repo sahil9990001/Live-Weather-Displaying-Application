@@ -1,0 +1,7 @@
+
+Requirements to run Weather App:
+    
+1.) Install Python 3.8.2 version in your PC.
+2.) Install Flask first in your local PC.
+3.) Install all other Package like request, render_template, json.
+4.) Now you are ready to run the app.
