@@ -1,0 +1,31 @@
+{% extends "inheritance.html" %} {% block content %}
+<br>
+<nav class="navbar navbar-light " style="background-color: lightcoral;">
+    <a class="navbar-brand " href="#">
+        <h2>Your Live weather Update</h2>
+    </a>
+</nav>
+<br>
+<div style="background-color: antiquewhite; height: 100vh;">
+    <div class="container h-100">
+        <div class="row justify-content-center">
+            <div class="col-md-6 col-sm-12 col-xs-12 pt-5">
+                <div class="card border-0 p-3 shadow-sm text-center" style="background-color: lightcyan;">
+                    <h2 class="text-muted">Current Weather In {{city}}</h2>
+
+                    {% if degree=='Celsius' %}
+                    <h5 class=" background-color">Current Temperature: {{(Current_temperature-32)*5/9}} *C</h5>
+                    {% else %}
+                    <h5 class=" background-color">Current Temperature: {{Current_temperature}} F</h5>
+
+                    {% endif %}
+                    <h5 class=" background-color">Humidity Level: {{humidity}} </h5>
+
+                    <h5>Wind Speed in mph: {{wind_speed}}</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}
